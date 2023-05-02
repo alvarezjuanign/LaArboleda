@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -26,7 +27,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     height: 100vh;
     position: relative;
 }
@@ -35,17 +35,102 @@ body{
     display: flex;
     list-style: none;
     position: fixed;
+    background: #f2f2f2;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 1;
 }
 
-li a{
-    margin: 15px;
-    color: #f2f2f2;
-    text-decoration: none;
+.element{
+    color: #000;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
 }
 
 h1{
     position: relative;
     top: 50%;
+}
+
+.container-we .we h4{
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.container-we{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+}
+
+.img-we{
+    margin-top: 2rem;
+}
+
+.container-pe{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100vw;
+    gap: -1rem;
+}
+
+.people{
+    margin: 5rem;
+    text-align: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 80px;
+}
+
+#contact{
+    background: #f2f2f2;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    list-style: none;
+    margin: 5px;
+}
+
+/* MODIFY SCROLLBAR FIREFOX*/
+*{
+    scrollbar-width: thin;
+    scrollbar-color: transparent #E7B464;
+}
+
+/* MODIFY SCROLLBAR CHROME EDGE SAFARI*/
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #f2f2f2;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #f1d9b1;
+    border-radius: 20px;
+    border: #f1d9b1;
 }
