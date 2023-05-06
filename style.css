@@ -35,7 +35,8 @@ body{
     display: flex;
     list-style: none;
     position: fixed;
-    background: #f2f2f2;
+    background: transparent;
+    backdrop-filter: blur(15px);
     justify-content: space-evenly;
     width: 100%;
     z-index: 1;
@@ -55,16 +56,24 @@ a{
     text-decoration: none;
 }
 
-h1{
+a:hover{
+    border-bottom: 2px solid #ee5656;
+}
+
+.selected{
+    border-bottom: 2px solid #ee5656;
+}
+
+.logo{
     position: relative;
-    top: 50%;
+    top: 40%;
+    width: 300px;
 }
 
 .container-we{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 80px;
 }
 
 .container-we .we h4{
@@ -89,33 +98,34 @@ h1{
 }
 
 .people{
-    margin: 3rem;
+    padding: 10px;
+    margin: 2rem;
     text-align: center;
     border: 2px solid #ddd;
-    border-radius: 10px;
+    border-radius: 10%;
 }
 
 .people:hover{
-    box-shadow: 0px 0px 5px #777;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .avatar{
     border-radius: 50%;
-    height: 120px;
-    padding: 15px;
+    height: 100px;
 }
 
 .container-form{
+    width: 100%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
 }
 
 .container-form .form input{
     padding: 5px;
     margin: 10px;
     border: none;
-    border-bottom: 2px solid #fad497;
+    border-bottom: 2px solid #ee5656;
     background: none;
 }
 
@@ -141,8 +151,8 @@ h1{
     justify-content: center;
     background: #f2f2f2;
     padding: 2rem;
-    margin: 2rem;
-    width: 80%;
+    margin: 5%;
+    width: 50%;
     border-radius: 20px;
     box-shadow: 0px 0px 5px #000;
 }
@@ -156,16 +166,23 @@ label{
     padding: 5px;
     margin: 10px;
     border: none;
-    border-bottom: 2px solid #fad497;
+    border-bottom: 2px solid #ee5656;
     background: none;
     height: 100px;
 }
 
 .btn{
-    border: 2px solid #fad497;
-    background: #fad497;
+    margin-top: 10px;
+    border: 2px solid #ee5656;
+    background: #ee5656;
     border-radius: 10px;
     padding: 5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 10px #ee5656;
 }
 
 
@@ -192,7 +209,7 @@ label{
 /* MODIFY SCROLLBAR FIREFOX*/
 *{
     scrollbar-width: thin;
-    scrollbar-color: transparent #E7B464;
+    scrollbar-color: transparent #ee5656;
 }
 
 /* MODIFY SCROLLBAR CHROME EDGE SAFARI*/
@@ -205,7 +222,14 @@ label{
 }
 
 *::-webkit-scrollbar-thumb{
-    background: #f1d9b1;
+    background: #ee5656;
     border-radius: 20px;
-    border: #f1d9b1;
+    border: #ee5656;
+}
+
+
+@media all and (min-width: 600px) {
+    .logo{
+    width: 600px;
+    }
 }
