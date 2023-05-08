@@ -1,11 +1,10 @@
 const btn = document.querySelectorAll('[btn-nav]')
 
 
+
+
 btn.forEach(btn =>{
     btn.addEventListener('click', ()=>{
-        btn.classList.add('selected')
+        btn.classList.toggle('selected')
     })
 })
-
-
-console.log('HOLA CONSOLA')
