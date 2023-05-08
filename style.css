@@ -43,10 +43,6 @@ a{
     text-decoration: none;
 }
 
-.selected{
-    border-bottom: 2px solid #ee5656;
-}
-
 .logo{
     position: relative;
     top: 40%;
@@ -58,7 +54,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 h2{
@@ -70,27 +65,49 @@ h2{
     text-align: center;
 }
 
-.container-people{
+.container-opinion{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.people{
+.opinion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     margin: 1rem;
     text-align: center;
-    border: 2px solid #ddd;
-    border-radius: 10%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #000;
+    width: 70%;
+    height: 150px;
 }
 
-.people:hover{
-    box-shadow: 0px 0px 10px #000;
+.stars{
+    color: #ffae00;
 }
 
-.avatar{
-    border-radius: 50%;
-    height: 80px;
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    margin-top: 5%;
+}
+
+.gallery img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery img:hover{
+    box-shadow: 0px 5px 20px #000;
+    cursor: pointer;
 }
 
 .container-form{
@@ -187,11 +204,16 @@ i{
     font-size: larger;
 }
 
+.selected{
+    border-bottom: 2px solid #ee5656;
+}
+
 /* MODIFY SCROLLBAR FIREFOX*/
 *{
     scrollbar-width: thin;
     scrollbar-color: transparent #ee5656;
 }
+
 
 /* MODIFY SCROLLBAR CHROME EDGE SAFARI*/
 *::-webkit-scrollbar{
@@ -211,6 +233,35 @@ i{
 
 @media all and (min-width: 600px) {
     .logo{
+    width: 500px;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media all and (min-width: 800px) {
+    .gallery{
+        grid-template-columns: repeat(4, 200px);
+    }
+
+    .container-opinion{
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .logo{
     width: 600px;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    .gallery img{
+        width: 300px;
+        height: 300px;
     }
 }
