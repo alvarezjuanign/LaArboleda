@@ -100,8 +100,8 @@ h2{
 
 .gallery img{
     border-radius: 10px;
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
 }
 
