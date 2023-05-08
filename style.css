@@ -103,6 +103,7 @@ h2{
     width: 180px;
     height: 180px;
     object-fit: cover;
+    margin: 5px;
 }
 
 .gallery img:hover{
