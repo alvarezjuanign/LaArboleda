@@ -38,7 +38,7 @@ body{
     background: transparent;
 }
 
-a{
+.element a{
     color: #000;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ a{
 .logo{
     position: relative;
     top: 40%;
-    width: 300px;
+    width: 360px;
 }
 
 .container-we{
@@ -113,6 +113,7 @@ h2{
 .container-form{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -138,6 +139,25 @@ h2{
 }
 
 .container-form .form textarea::placeholder{
+    color: #000;
+}
+
+.list-social{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social{
+    margin: 20px;
+}
+
+.social:hover{
+    transform: scale(1.5);
+}
+
+i{
+    font-size: xx-large;
     color: #000;
 }
 
@@ -190,20 +210,6 @@ label{
     text-align: center;
 }
 
-.list-footer{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.social{
-    margin: 5px;
-}
-
-i{
-    font-size: larger;
-}
-
 .selected{
     border-bottom: 2px solid #ee5656;
 }
@@ -249,6 +255,10 @@ i{
     .container-opinion{
         flex-direction: row;
     }
+
+    .form{
+        width: 50%;
+    }
 }
 
 @media all and (min-width: 1024px) {
@@ -263,5 +273,9 @@ i{
     .gallery img{
         width: 300px;
         height: 300px;
+    }
+
+    .form{
+        width: 50%;
     }
 }
