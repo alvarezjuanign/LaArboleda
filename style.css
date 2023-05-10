@@ -43,6 +43,10 @@ body{
     text-decoration: none;
 }
 
+.selected{
+    border-bottom: 2px solid #ee5656;
+}
+
 .logo{
     position: relative;
     top: 40%;
@@ -212,10 +216,6 @@ label{
 
 #contact p{
     text-align: center;
-}
-
-.selected{
-    border-bottom: 2px solid #ee5656;
 }
 
 /* MODIFY SCROLLBAR FIREFOX*/

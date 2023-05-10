@@ -1,8 +1,11 @@
 const btn = document.querySelectorAll('[btn-nav]')
 
 
-btn.forEach(btn =>{
-    btn.addEventListener('click', ()=>{
-        btn.classList.toggle('selected')
+btn.forEach(button =>{
+    button.addEventListener('click', () => {
+            btn.forEach(button => {
+                button.classList.remove('selected')
+            })
+            button.classList.add('selected')
+        })
     })
-})
