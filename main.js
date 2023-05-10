@@ -1,7 +1,11 @@
+'use strict'
+
 const btn = document.querySelectorAll('[btn-nav]')
+
 const modal = document.getElementById('modal')
 const modalImg = document.getElementById('modal-img')
 const overlay = document.getElementById('overlay')
+
 
 btn.forEach(button =>{
     button.addEventListener('click', () => {
