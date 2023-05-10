@@ -53,19 +53,25 @@
 
         <section class="container-gallery">
             <div class="gallery">
-                <img src="./Images/img1.jpg" alt="photos">
-                <img src="./Images/img2.jpg" alt="photos">
-                <img src="./Images/img3.jpg" alt="photos">
-                <img src="./Images/img4.jpg" alt="photos">
-                <img src="./Images/img5.jpg" alt="photos">
-                <img src="./Images/img6.jpg" alt="photos">
-                <img src="./Images/img7.jpg" alt="photos">
-                <img src="./Images/img8.jpg" alt="photos">
-                <img src="./Images/img9.jpg" alt="photos">
-                <img src="./Images/img10.jpg" alt="photos">
-                <img src="./Images/img11.jpg" alt="photos">
-                <img src="./Images/img12.jpg" alt="photos">
+                <img src="./Images/img1.jpg" alt="photos" onclick="openModal('./Images/img1.jpg')">
+                <img src="./Images/img2.jpg" alt="photos" onclick="openModal('./Images/img2.jpg')">
+                <img src="./Images/img3.jpg" alt="photos" onclick="openModal('./Images/img3.jpg')">
+                <img src="./Images/img4.jpg" alt="photos" onclick="openModal('./Images/img4.jpg')">
+                <img src="./Images/img5.jpg" alt="photos" onclick="openModal('./Images/img5.jpg')">
+                <img src="./Images/img6.jpg" alt="photos" onclick="openModal('./Images/img6.jpg')">
+                <img src="./Images/img7.jpg" alt="photos" onclick="openModal('./Images/img7.jpg')">
+                <img src="./Images/img8.jpg" alt="photos" onclick="openModal('./Images/img8.jpg')">
+                <img src="./Images/img9.jpg" alt="photos" onclick="openModal('./Images/img9.jpg')">
+                <img src="./Images/img10.jpg" alt="photos" onclick="openModal('./Images/img10.jpg')">
+                <img src="./Images/img11.jpg" alt="photos" onclick="openModal('./Images/img11.jpg')">
+                <img src="./Images/img12.jpg" alt="photos" onclick="openModal('./Images/img12.jpg')">
             </div>
+
+            <div class="modal" id="modal">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img class="modal-img" id="modal-img">
+            </div>
+            <div class="overlay" id="overlay"></div>
         </section>
 
         <section class="container-form">
