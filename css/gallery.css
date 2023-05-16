@@ -15,7 +15,8 @@
 }
 
 .gallery img:hover{
-    box-shadow: 0px 5px 20px #000;
+    transform: scale(1.02);
+    transition: 0.4s;
     cursor: pointer;
 }
 
