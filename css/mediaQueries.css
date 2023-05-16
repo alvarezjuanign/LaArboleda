@@ -1,0 +1,46 @@
+@media all and (min-width: 600px) {
+    .logo{
+    width: 500px;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .logo{
+    width: 600px;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    .gallery img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-opinion{
+    flex-direction: row;
+}
+
+    .container-form{
+    flex-direction: row;
+    }
+
+    .list-social{
+    flex-direction: column;
+}
+
+    .map{
+        margin: 20px;
+        width: 40%;
+    }
+
+    .form{
+        margin: 20px;
+        width: 40%;
+    }
+}
