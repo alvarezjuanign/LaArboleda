@@ -40,7 +40,6 @@ btnReq.addEventListener("click", (e)=>{
     }
 })
 
-
 const validate = ()=>{
     let error = []
     if (nameReq.value.length < 5 || nameReq.value.length > 40){
