@@ -13,7 +13,23 @@
     width: 80%;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 1rem;
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+label{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 900;
 }
 
 .form input{
@@ -40,49 +56,6 @@
     color: #000;
 }
 
-.list-social{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: #f2f2f2;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #000;
-}
-
-.social{
-    margin: 13px;
-}
-
-.social:hover{
-    transform: scale(1.1);
-}
-
-i{
-    font-size: xx-large;
-    color: #000;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #f2f2f2;
-    padding: 1rem;
-    width: 80%;
-    height: 50%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px;
-}
-
-label{
-    text-align: center;
-    margin-bottom: 25px;
-    font-weight: 900;
-}
-
 .area{
     margin: 10px;
     border: none;
@@ -99,8 +72,58 @@ label{
     padding: 5px;
     font-size: 18px;
     letter-spacing: 2px;
+    color: #f2f2f2;
+    font-weight: 900;
 }
 
 .btn:hover{
     box-shadow: 0px 0px 10px #ee5656;
+}
+
+.btn:active{
+    transform: scale(1.02);
+}
+
+.list-social{
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    list-style: none;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #1971E7;
+    border-radius: 100%;
+    outline: 2px solid #000;
+}
+
+.social-f i{
+    color: #f2f2f2;
+    font-size: x-large;
+}
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background: #22C860;
+    border-radius: 100%;
+    outline: 2px solid #000;
+}
+
+.social-w i{
+    color: #f2f2f2;
+    padding: 5px;
+    font-size: x-large;
+}
+
+.facebook:hover,.whatsapp:hover{
+    transform: scale(1.2);
 }
