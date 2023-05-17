@@ -15,94 +15,98 @@
     <title>CABAÑAS</title>
 </head>
 <body>
-    <main>
-        <div class="container-nav" id="home">
-            <nav class="navbar">
-                <ul class="list-container">
-                    <button class="element"><a btn-nav href="#home">INICIO</a></button>
-                    <button class="element"><a btn-nav href="#we">NOSOTROS</a></button>
-                    <button class="element"><a btn-nav href="#contact">CONTACTO</a></button>
-                </ul>
-                <img src="./images/logonav.png" alt="logo" class="logo">
-            </nav>
+    <main class="mandatory">
+        
+        <div class="scroll">
+            <section class="container-nav" id="home">
+                <nav class="navbar">
+                    <ul class="list-container">
+                        <button class="element"><a btn-nav href="#home">INICIO</a></button>
+                        <button class="element"><a btn-nav href="#we">NOSOTROS</a></button>
+                        <button class="element"><a btn-nav href="#gallery">GALERÍA</a></button>
+                        <button class="element"><a btn-nav href="#contact">CONTACTO</a></button>
+                    </ul>
+                    <img src="./images/logonav.png" alt="logo" class="logo">
+                </nav>
+            </section>
         </div>
 
-        <section class="container-we" id="we">
-            <h2>¿Quiénes Somos?</h2>
-            <div class="we">
-                <p>La Arboleda en Carpinteria posee dos unidades vacacionales en un predio de 2500 metros cuadrados, rodeado por el entorno natural de la Sierra de los Comechingones. Estás cabañas son el refugio perfecto para aquellos que buscan escapar del bullicio de la ciudad y sumergirse en la serenidad, rodeadas de naturaleza y con la imponente presencia de las Sierras de los Comechingones como telón de fondo, te espera una experiencia inolvidable en Carpintería, San Luis.</p>
-            </div>
-                <div class="container-opinion">
-                    <div class="opinion">
-                        <h4>Julia Vagni</h4>
-                        <p>"Excelente cabaña para ir en familia, la pileta está bárbara. Impecable todo."</p>
-                        <p class="stars">★★★★★</p>
-                    </div>
-                    <div class="opinion">
-                        <h4>Victor Alberto Magnarelli</h4>
-                        <p>"Excelente lugar! todo de 10!"</p>
-                        <p class="stars">★★★★</p>
-                    </div>
-                    <div class="opinion">
-                        <h4>Jesica Paula</h4>
-                        <p>"Súper recomendable para ir con la familia."</p>
-                        <p class="stars">★★★★★</p>
-                    </div>
-                    <div class="opinion">
-                        <h4>Leo Fuentes</h4>
-                        <p>"Excelente lugar ... una vista increíble de la sierra!!!"</p>
-                        <p class="stars">★★★★</p>
-                    </div>
+        <div class="scroll">
+            <section class="container-we" id="we">
+                <h2>¿Quiénes Somos?</h2>
+                <div class="we">
+                    <p>La Arboleda en Carpinteria posee dos unidades vacacionales en un predio de 2500 metros cuadrados, rodeado por el entorno natural de la Sierra de los Comechingones. Estás cabañas son el refugio perfecto para aquellos que buscan escapar del bullicio de la ciudad y sumergirse en la serenidad, rodeadas de naturaleza y con la imponente presencia de las Sierras de los Comechingones como telón de fondo, te espera una experiencia inolvidable en Carpintería, San Luis.</p>
                 </div>
-        </section>
+                    <div class="container-opinion">
+                        <div class="opinion">
+                            <h4>Julia Vagni</h4>
+                            <p>"Excelente cabaña para ir en familia, la pileta está bárbara. Impecable todo."</p>
+                            <p class="stars">★★★★★</p>
+                        </div>
+                        <div class="opinion">
+                            <h4>Victor Alberto Magnarelli</h4>
+                            <p>"Excelente lugar! todo de 10!"</p>
+                            <p class="stars">★★★★</p>
+                        </div>
+                        <div class="opinion">
+                            <h4>Jesica Paula</h4>
+                            <p>"Súper recomendable para ir con la familia."</p>
+                            <p class="stars">★★★★★</p>
+                        </div>
+                        <div class="opinion">
+                            <h4>Leo Fuentes</h4>
+                            <p>"Excelente lugar ... una vista increíble de la sierra!!!"</p>
+                            <p class="stars">★★★★</p>
+                        </div>
+                    </div>
+            </section>
+        </div>
 
-        <section class="container-gallery">
-            <div class="gallery">
-                <img src="./images/img1.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img1.jpg')">
-                <img src="./images/img2.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img2.jpg')">
-                <img src="./images/img3.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img3.jpg')">
-                <img src="./images/img4.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img4.jpg')">
-                <img src="./images/img5.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img5.jpg')">
-                <img src="./images/img6.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img6.jpg')">
-                <img src="./images/img7.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img7.jpg')">
-                <img src="./images/img8.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img8.jpg')">
-                <img src="./images/img9.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img9.jpg')">
-                <img src="./images/img10.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img10.jpg')">
-                <img src="./images/img11.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img11.jpg')">
-                <img src="./images/img12.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img12.jpg')">
-            </div>
-
-            <div class="modal" id="modal">
-                <span class="close-modal" onclick="closeModal()">&times;</span>
-                <img class="modal-img" id="modal-img">
-            </div>
-            <div class="overlay" id="overlay"></div>
-        </section>
-
-        <section class="container-form">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.7471579548829!2d-65.00217437034054!3d-32.39563979442966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e3220122fe8d%3A0x841412906b839df!2sLa%20Arboleda%20en%20Carpinteria!5e0!3m2!1ses!2sar!4v1684191462736!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <form class="form">
-                <label>CONTACTO</label>
-                <input required class="name" type="text" placeholder="Nombre">
-                <input required class="email" type="email" placeholder="Email">
-                <textarea required class="area" placeholder="Escribe tu mensaje..."></textarea>
-                <button class="btn">Enviar</button>
-            </form>
-            <ul class="list-social">
-                <div class="facebook">
-                    <li class="social-f"><a href="https://www.facebook.com/laarboledaencarpinteria"><i class="fa-brands fa-facebook"></i></a></li>
+        <div class="scroll">
+            <section class="container-gallery" id="gallery">
+                <div class="gallery">
+                    <img src="./images/img2.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img2.jpg')">
+                    <img src="./images/img3.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img3.jpg')">
+                    <img src="./images/img4.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img4.jpg')">
+                    <img src="./images/img5.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img5.jpg')">
+                    <img src="./images/img7.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img7.jpg')">
+                    <img src="./images/img8.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img8.jpg')">
+                    <img src="./images/img9.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img9.jpg')">
+                    <img src="./images/img10.jpg" alt="photos" loading="lazy" onclick="openModal('./images/img10.jpg')">
                 </div>
-                <div class="whatsapp">
-                    <li class="social-w"><a href="https://wa.link/o1g51t"><i class="fa-brands fa-whatsapp"></i></a></li>
-                </div>
-            </ul>
-        </section>
 
-        <footer id="contact">
-            <p>&copy 2023, Juan Alvarez Todos los derechos reservados</p>
-        </footer>
+                <div class="modal" id="modal">
+                    <span class="close-modal" onclick="closeModal()">&times;</span>
+                    <img class="modal-img" id="modal-img">
+                </div>
+                <div class="overlay" id="overlay"></div>
+            </section>
+        </div>
+
+        <div class="scroll">
+            <section class="container-form" id="contact">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.7471579548829!2d-65.00217437034054!3d-32.39563979442966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e3220122fe8d%3A0x841412906b839df!2sLa%20Arboleda%20en%20Carpinteria!5e0!3m2!1ses!2sar!4v1684191462736!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form class="form">
+                    <label>CONTACTO</label>
+                    <input required class="name" type="text" placeholder="Nombre">
+                    <input required class="email" type="email" placeholder="Email">
+                    <textarea required class="area" placeholder="Escribe tu mensaje..."></textarea>
+                    <button class="btn">Enviar</button>
+                </form>
+                <ul class="list-social">
+                    <div class="facebook">
+                        <li class="social-f"><a href="https://www.facebook.com/laarboledaencarpinteria"><i class="fa-brands fa-facebook"></i></a></li>
+                    </div>
+                    <div class="whatsapp">
+                        <li class="social-w"><a href="https://wa.link/o1g51t"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </div>
+                </ul>
+                <footer>
+                    <p>&copy 2023, Juan Alvarez Todos los derechos reservados</p>
+                </footer>
+            </section>
+        </div>
     </main>
-    
 </body>
 </html>

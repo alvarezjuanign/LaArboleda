@@ -2,14 +2,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .map{
-    margin-top: 80px;
-    margin-bottom: 40px;
-    height: 50%;
+    height: 30%;
     width: 80%;
     border: none;
     border-radius: 20px;
@@ -22,8 +21,9 @@
     background: #f2f2f2;
     padding: 1rem;
     width: 80%;
-    height: 50%;
+    height: 30%;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 label{
@@ -126,4 +126,17 @@ label{
 
 .facebook:hover,.whatsapp:hover{
     transform: scale(1.2);
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ee5656;
+    padding: 15px;
+}
+
+footer p{
+    text-align: center;
 }

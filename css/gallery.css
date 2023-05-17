@@ -1,10 +1,11 @@
 .gallery{
     display: grid;
     grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 200px);
     justify-content: center;
-    align-items: stretch;
-    gap: 10px;
-    margin-top: 5%;
+    align-content: center;
+    gap: 5px;
+    height:100vh;
 }
 
 .gallery img{

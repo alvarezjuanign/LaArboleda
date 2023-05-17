@@ -11,32 +11,11 @@ body{
     height: 100vh;
 }
 
-#contact{
-    background: #ee5656;
-    padding: 15px;
+.mandatory{
+    scroll-snap-type: y mandatory;
 }
 
-#contact p{
-    text-align: center;
-}
-
-/* MODIFY SCROLLBAR FIREFOX*/
-*{
-    scrollbar-width: thin;
-    scrollbar-color: transparent #ee5656;
-}
-
-/* MODIFY SCROLLBAR CHROME EDGE SAFARI*/
-*::-webkit-scrollbar{
-    width: 10px;
-}
-
-*::-webkit-scrollbar-track{
-    background: #f2f2f2;
-}
-
-*::-webkit-scrollbar-thumb{
-    background: #ee5656;
-    border-radius: 20px;
-    border: #ee5656;
+.scroll{
+    height: 100vh;
+    scroll-snap-align: center;
 }
