@@ -72,7 +72,7 @@ label{
     padding: 5px;
     font-size: 18px;
     letter-spacing: 2px;
-    color: #f2f2f2;
+    color: #000;
     font-weight: 900;
 }
 
@@ -91,7 +91,7 @@ label{
     list-style: none;
 }
 
-.facebook{
+.social-f{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ label{
     font-size: x-large;
 }
 
-.whatsapp{
+.social-w{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +124,7 @@ label{
     font-size: x-large;
 }
 
-.facebook:hover,.whatsapp:hover{
+.social-f:hover,.social-w:hover{
     transform: scale(1.2);
 }
 
