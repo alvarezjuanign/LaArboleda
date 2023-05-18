@@ -120,12 +120,11 @@ label{
 
 .social-w i{
     color: #f2f2f2;
-    padding: 5px;
     font-size: x-large;
 }
 
 .social-f:hover,.social-w:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 footer{
