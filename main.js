@@ -10,6 +10,9 @@ const nameReq = document.querySelector('.name')
 const emailReq = document.querySelector('.email')
 const btnReq = document.querySelector('.btn')
 
+const yearCopy = document.getElementById('year')
+yearCopy.textContent = new Date().getFullYear()
+
 
 btn.forEach(button =>{
     button.addEventListener('click', () => {
