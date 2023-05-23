@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .list-container{
     display: flex;
     list-style: none;
-    position: fixed;
     background: transparent;
     backdrop-filter: blur(15px);
     justify-content: space-evenly;
@@ -34,7 +34,6 @@
 }
 
 .logo{
-    position: relative;
-    top: 40%;
+    margin: auto;
     width: 360px;
 }
