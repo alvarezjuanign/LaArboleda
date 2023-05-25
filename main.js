@@ -9,9 +9,23 @@ const overlay = document.getElementById('overlay')
 const yearCopy = document.getElementById('year')
 yearCopy.textContent = new Date().getFullYear()
 
-Notification.requestPermission()
-if (Notification.permission == 'granted') new Notification('Bienvenido a La Arboleda')
-
+if ('Notification' in window) {
+    Notification.requestPermission()
+      .then(function(permission) {
+        if (permission === 'granted') {
+          var options = {
+            body: 'Esta es una notificación de ejemplo.',
+            icon: 'ruta/al/icono.png' // Ruta de la imagen del icono
+          };
+  
+          var notification = new Notification('¡Hola!', options);
+  
+          notification.onclick = function() {
+            console.log('El usuario hizo clic en la notificación.');
+          };
+        }
+      });
+  }
 
 btn.forEach(button =>{
     button.addEventListener('click', () => {
