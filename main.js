@@ -12,7 +12,7 @@ yearCopy.textContent = new Date().getFullYear()
 Notification.requestPermission()
 if (Notification.permission === 'granted') {
     const options = {
-        body: 'Bienvenido',
+        body: 'Bienvenido a La Arboleda',
         icon: './images/house-solid.avif'
     }
         new Notification('¡Hola!', options);
