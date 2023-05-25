@@ -9,6 +9,9 @@ const overlay = document.getElementById('overlay')
 const yearCopy = document.getElementById('year')
 yearCopy.textContent = new Date().getFullYear()
 
+Notification.requestPermission()
+if (Notification.permission == 'granted') new Notification('Bienvenido a La Arboleda')
+
 
 btn.forEach(button =>{
     button.addEventListener('click', () => {
