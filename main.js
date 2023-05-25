@@ -10,7 +10,7 @@ const yearCopy = document.getElementById('year')
 yearCopy.textContent = new Date().getFullYear()
 
 Notification.requestPermission()
-if (permission === 'granted') {
+if (Notification.permission === 'granted') {
     const options = {
         body: 'Bienvenido',
         icon: './images/house-solid.avif'
