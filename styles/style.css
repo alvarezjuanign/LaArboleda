@@ -30,6 +30,13 @@ a[btn-nav]{
     right: 5px;
     font-size: 20px;
     cursor: pointer;
+    outline: 1px solid #000;
+    border-radius: 100%;
+    background: #333;
+}
+
+.dark:hover {
+    transform: scale(1.1);
 }
 
 .light {
@@ -39,6 +46,13 @@ a[btn-nav]{
     font-size: 20px;
     display: none;
     cursor: pointer;
+    outline: 1px solid #f2f2f2;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.light:hover {
+    transform: scale(1.1);
 }
 
 .img-container{
@@ -178,6 +192,7 @@ a[btn-nav]{
 }
 
 .form {
+    outline: 2px solid #ee5656;
     display: flex;
     flex-direction: column;
     justify-content: center;
