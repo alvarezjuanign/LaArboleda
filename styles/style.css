@@ -19,13 +19,26 @@
     background: transparent;
 }
 
-button{
-    cursor: pointer;
-}
-
 a[btn-nav]{
     color: #777;
     text-decoration: none;
+}
+
+.dark {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.light {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
 }
 
 .img-container{

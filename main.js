@@ -6,16 +6,25 @@ const modal = document.getElementById('modal')
 const modalImg = document.getElementById('modal-img')
 const overlay = document.getElementById('overlay')
 
-const darkModeButton = document.getElementById('darkModeButton')
 const body = document.body
+const darkModeButton = document.getElementById('darkModeButton')
+const lightModeButton = document.getElementById('lightModeButton')
 
 const yearCopy = document.getElementById('year')
 yearCopy.textContent = new Date().getFullYear()
 
 
-darkModeButton.addEventListener('click', function () {
-    body.classList.toggle('dark-mode')
-});
+darkModeButton.addEventListener('click', () => {
+    darkModeButton.style.display = 'none'
+    lightModeButton.style.display = 'block'
+    body.classList.add('dark-mode')
+})
+
+lightModeButton.addEventListener('click', () => {
+    darkModeButton.style.display = 'block'
+    lightModeButton.style.display = 'none'
+    body.classList.remove('dark-mode')
+})
 
 Notification.requestPermission()
 if (Notification.permission === 'granted') {
@@ -23,7 +32,7 @@ if (Notification.permission === 'granted') {
         body: 'Bienvenido a La Arboleda',
         icon: ''
     }
-        new Notification('¡Hola!', options);
+        new Notification('¡Hola!', options)
 }
 
 btn.forEach(button =>{
