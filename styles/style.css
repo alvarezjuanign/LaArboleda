@@ -268,6 +268,7 @@ a[btn-nav]{
     height: 50px;
     background: #1971E7;
     outline: 2px solid #000;
+    border-radius: 10px;
 }
 
 .social-w {
@@ -278,6 +279,7 @@ a[btn-nav]{
     width: 50px;
     background: #22C860;
     outline: 2px solid #000;
+    border-radius: 10px;
 }
 
 .social-f i, 
