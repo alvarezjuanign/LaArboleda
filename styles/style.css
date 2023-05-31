@@ -73,7 +73,7 @@ a[btn-nav]{
     text-align: center;
     width: 70%;
     height: 180px;
-    border-radius: 50px;
+    border-radius: 50px 5px 50px 5px;
     outline: 2px solid #aaa;
 }
 
