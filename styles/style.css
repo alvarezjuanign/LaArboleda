@@ -81,6 +81,10 @@ a[btn-nav]{
     color: #ffae00;
 }
 
+.gallery-container{
+    height: 100vh;
+}
+
 .gallery {
     display: grid;
     grid-template-rows: repeat(5, 140px);
