@@ -21,7 +21,7 @@ body{
 /* MODIFY SCROLLBAR FIREFOX*/
 * {
     scrollbar-width: thin;
-    scrollbar-color: inherit #EE5656;
+    scrollbar-color: inherit #d1272d;
 }
 
 /* MODIFY SCROLLBAR CHROME EDGE SAFARI*/
@@ -34,7 +34,7 @@ body{
 }
 
 *::-webkit-scrollbar-thumb {
-    background: #EE5656;
+    background: #d1272d;
     border-radius: 20px;
-    border: #EE5656;
+    border: #d1272d;
 }

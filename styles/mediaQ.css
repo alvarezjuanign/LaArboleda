@@ -1,8 +1,4 @@
 @media all and (min-width: 768px) {
-    .nav-logo {
-        width: 500px;
-    }
-
     .opinion-container {
         grid-template-columns: repeat(2, 300px);
     }
@@ -30,11 +26,6 @@
 }
 
 @media all and (min-width: 1024px) {
-    .nav-logo {
-        width: 700px;
-    }
-
-
     .we-intro{
         width: 1020px;
     }

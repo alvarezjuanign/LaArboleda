@@ -6,8 +6,7 @@
     justify-content: space-around;
     padding: 10px;
     width: 100%;
-    background: transparent;
-    backdrop-filter: blur(15px);
+    background: #d1272d;
     box-shadow: 0px 0px 5px #000;
     z-index: 2;
 }
@@ -20,7 +19,9 @@
 }
 
 a[btn-nav]{
-    color: #777;
+    color: #f2f2f2;
+    font-weight: 900;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
@@ -55,20 +56,19 @@ a[btn-nav]{
     transform: scale(1.1);
 }
 
-.img-container{
+.bg-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
-}
-
-.nav-logo {
-    width: 370px;
-    border-radius: 30px;
+    background-image: url("../images/bg.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .selected {
-    border-bottom: 2px solid #ee5656;
+    border-bottom: 2px solid #f2f2f2;
 }
 
 .we-container {
@@ -192,7 +192,7 @@ a[btn-nav]{
 }
 
 .form {
-    outline: 2px solid #ee5656;
+    outline: 2px solid #d1272d;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +221,7 @@ a[btn-nav]{
     padding: 8px;
     margin: 8px;
     border: none;
-    border-bottom: 2px solid #ee5656;
+    border-bottom: 2px solid #d1272d;
     background: none;
 }
 
@@ -235,8 +235,8 @@ a[btn-nav]{
 
 .btn {
     margin-top: 20px;
-    border: 2px solid #ee5656;
-    background: #ee5656;
+    border: 2px solid #d1272d;
+    background: #d1272d;
     border-radius: 10px;
     padding: 5px;
     font-size: 18px;
@@ -246,7 +246,7 @@ a[btn-nav]{
 }
 
 .btn:hover {
-    box-shadow: 0px 0px 10px #ee5656;
+    box-shadow: 0px 0px 10px #d1272d;
 }
 
 .btn:active {
@@ -295,7 +295,7 @@ a[btn-nav]{
 
 footer {
     width: 100%;
-    background: #ee5656;
+    background: #d1272d;
     padding: 15px;
 }
 
