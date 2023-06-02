@@ -13,7 +13,6 @@ const lightModeButton = document.getElementById('lightModeButton')
 const yearCopy = document.getElementById('year')
 yearCopy.textContent = new Date().getFullYear()
 
-
 darkModeButton.addEventListener('click', () => {
     darkModeButton.style.display = 'none'
     lightModeButton.style.display = 'block'
@@ -29,20 +28,19 @@ lightModeButton.addEventListener('click', () => {
 Notification.requestPermission()
 if (Notification.permission === 'granted') {
     const options = {
-        body: 'Bienvenido a La Arboleda',
-        icon: ''
+        body: 'Bienvenido a La Arboleda'
     }
-        new Notification('¡Hola!', options)
+    new Notification('¡Hola!', options)
 }
 
 btn.forEach(button =>{
     button.addEventListener('click', () => {
-            btn.forEach(button => {
-                button.classList.remove('selected')
-            })
-            button.classList.add('selected')
+        btn.forEach(button => {
+            button.classList.remove('selected')
         })
+        button.classList.add('selected')
     })
+})
 
 const openModal = (imgSrc) => {
     modal.style.display = 'flex'
