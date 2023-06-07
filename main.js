@@ -1,7 +1,5 @@
 'use strict'
 
-const btn = document.querySelectorAll('[btn-nav]')
-
 const modal = document.getElementById('modal')
 const modalImg = document.getElementById('modal-img')
 const overlay = document.getElementById('overlay')
@@ -32,15 +30,6 @@ if (Notification.permission === 'granted') {
     }
     new Notification('¡Hola!', options)
 }
-
-btn.forEach(button =>{
-    button.addEventListener('click', () => {
-        btn.forEach(button => {
-            button.classList.remove('selected')
-        })
-        button.classList.add('selected')
-    })
-})
 
 const openModal = (imgSrc) => {
     modal.style.display = 'flex'
