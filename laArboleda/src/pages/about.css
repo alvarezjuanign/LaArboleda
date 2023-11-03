@@ -12,11 +12,19 @@
     margin: 2rem;
 }
 
+.sign {
+    color: #d1272d;
+    text-decoration: none;
+    align-self: start;
+    scale: 1.5;
+}
+
 .mainContTitle {
     font-size: 92px;
     border-bottom: 2px solid #d1272d;
     width: fit-content;
     cursor: default;
+    margin-top: 15px;
 }
 
 b{
