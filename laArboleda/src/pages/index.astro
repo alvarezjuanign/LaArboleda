@@ -1,11 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import './index.css'
-import Home from '../components/Home.astro'
+import "./index.css"
 ---
 
 <Layout>
-	<main>
-		<Home />
-	</main>
+<main class="mainCont">
+    <section class="sectionCont">
+        <h1 class="sectionContTitle">La Arboleda</h1>
+            <nav class="navCont">
+                <ul class="navContUl">
+                    <li class="navContLi">
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="navContLi">
+                        <a href="/gallery">Gallery</a>
+                    </li>
+                    <li class="navContLi">
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    </section>
+    <section class="contBtns">
+        <button class="btnWpp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+        <button class="btnIg">
+            <i class="fa-brands fa-instagram"></i>
+        </button>
+        <button class="btnFace">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </button>
+    </section>
+</main>
 </Layout>

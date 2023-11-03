@@ -2,4 +2,91 @@
     background-color: Canvas;
     color: CanvasText;
     color-scheme: dark light;
+    font-family: system-ui, sans-serif;
+}
+
+.mainCont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionCont{
+    height: 70%;
+}
+
+.sectionContTitle{
+    font-size: 48px;
+    border-bottom: 2px solid #d1272d;
+    cursor: default;
+}
+
+.navCont{
+    margin-top: 5rem;
+}
+
+.navContUl{
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.navContUl a {
+    text-decoration: none;
+    color: CanvasText;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navContLi{
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.navContLi:hover{
+    text-decoration: underline #d1272d;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.contBtns{
+    justify-self: flex-end;
+}
+
+.contBtns button {
+    margin: .5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 100%;
+    color: #f2f2f2;
+    transition: background-color,transform .5s ease-in-out;
+}
+
+.contBtns button:hover {
+    cursor: pointer;
+    outline: 2px solid CanvasText;
+    transform: scale(1.1);
+}
+
+.btnWpp:hover{
+    background-color: #25d36592;
+}
+
+.btnIg:hover{
+    background-color: #cc39a58f;
+}
+
+.btnFace:hover{
+    background-color: #4267b28c;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
 }
