@@ -1,0 +1,33 @@
+:root {
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: dark light;
+    font-family: system-ui, sans-serif;
+}
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.mainContTitle {
+    font-size: 92px;
+    border-bottom: 2px solid #d1272d;
+    width: fit-content;
+    cursor: default;
+}
+
+.mainGallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
