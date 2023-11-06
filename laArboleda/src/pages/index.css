@@ -44,15 +44,18 @@
     font-weight: 500;
 }
 
+.navContUl a:hover{
+    color: #d1272d;
+}
+
 .navContLi{
     transition: all 0.3s ease-in-out;
     width: fit-content;
 }
 
 .navContLi:hover{
-    text-decoration: underline #d1272d;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 
 .contBtns{
