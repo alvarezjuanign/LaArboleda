@@ -2,8 +2,8 @@
 
 A landing page for a huts in San Luis, Argentina 🇦🇷.
 
-✔️ Made with:
+✔️ Made with:<br>
 -Astro
 
-☁️ Deployed in:
+☁️ Deployed in:<br>
 -Vercel
