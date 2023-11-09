@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import "./index.css"
+
+const linkLocation = 'https://www.google.es/maps/place/La+Arboleda+en+Carpinteria/@-32.3950068,-65.0057687,16z/data=!4m6!3m5!1s0x95d2e3220122fe8d:0x841412906b839df!8m2!3d-32.3950068!4d-65.0013913!16s%2Fg%2F11h21_28c7?hl=es&entry=ttu'
 ---
 
-<Layout>
+<Layout title='La Arboleda'>
 <main class="mainCont">
     <section class="sectionCont">
         <h1 class="sectionContTitle">La Arboleda</h1>
@@ -16,21 +17,122 @@ import "./index.css"
                         <a href="/gallery">Gallery</a>
                     </li>
                     <li class="navContLi">
-                        <a href="/contact">Contact</a>
+                        <a href={linkLocation}>Location</a>
                     </li>
                 </ul>
             </nav>
     </section>
     <section class="contBtns">
         <button class="btnWpp">
-            <a href="https://wa.link/o1g51t"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.link/o1g51t">
+                <!-- Falta svg -->
+            </a>
         </button>
         <button class="btnIg">
-            <a href="https://www.instagram.com/laarboledaen/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/laarboledaen/">
+                <!-- Falta svg -->
+            </a>
         </button>
         <button class="btnFace">
-            <a href="https://www.facebook.com/laarboledaencarpinteria"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://www.facebook.com/laarboledaencarpinteria">
+                <!-- Falta svg -->
+            </a>
         </button>
     </section>
 </main>
 </Layout>
+
+<style>
+body{
+    height: 100vh;
+}
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.sectionContTitle {
+    text-align: center;
+    font-size: 64px;
+    border-bottom: 2px solid #d1272d;
+    cursor: default;
+}
+
+.navContUl {
+    list-style: none;
+    margin: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.navContUl a {
+    text-decoration: none;
+    color: CanvasText;
+    font-size: 2rem;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
+
+.navContUl a:hover {
+    color: #d1272d;
+}
+
+.navContLi {
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.navContLi:hover {
+    cursor: pointer;
+}
+
+.contBtns {
+    display: flex;
+    justify-content: center;
+}
+
+.contBtns button {
+    margin: .5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 100%;
+    color: #f2f2f2;
+    transition: transform .3s ease-in-out;
+}
+
+.contBtns button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btnWpp {
+    background-color: #25d365;
+}
+
+.btnIg {
+    background-color: #cc39a5;
+}
+
+.btnFace {
+    background-color: #4267b2;
+}
+
+.icon{
+    fill: #f2f2f2;
+    height: 20px;
+    width: 20px;
+}
+
+#instagram{
+    fill: #f2f2f2;
+    height: 20px;
+    width: 20px;
+}
+</style>

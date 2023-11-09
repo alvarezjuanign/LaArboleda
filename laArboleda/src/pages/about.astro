@@ -1,11 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import "./about.css"
 ---
 
-<Layout>
+<Layout title='La Arboleda'>
     <main class="mainCont">
-        <a class="sign" href="..">🡸</a>
+        <a class="sign" href="..">&laquo;</a>
         <h1 class="mainContTitle">About</h1>
         <p class="mainContP">
             <b>La Arboleda en Carpinteria</b> posee dos unidades vacacionales en un predio de 2500 metros cuadrados, rodeado por el entorno natural de la Sierra de los Comechingones.<br><br>
@@ -47,3 +46,70 @@ import "./about.css"
         </section>
     </main>
 </Layout>
+
+<style>
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.sign {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #d1272d;
+    text-decoration: none;
+    align-self: start;
+    scale: 3;
+    transition: scale 0.3s ease-in-out;
+}
+
+.sign:hover{
+    scale: 3.5;
+    color: #f2f2f2;
+}
+
+.mainContTitle {
+    font-size: 64px;
+    border-bottom: 2px solid #d1272d;
+    width: fit-content;
+    cursor: default;
+    margin-top: 15px;
+}
+
+b{
+    color: #d1272d;
+}
+
+.opinionsTitle{
+    font-size: 24px;
+    border-bottom: 2px solid #d1272d;
+    width: fit-content;
+    cursor: default;
+    margin-top: 50px;
+}
+
+.opinionCont > div{
+    border-bottom: #d1272d .1rem solid;
+    margin-bottom: 2rem;
+}
+
+.opinionCont > div > h3{
+    display: inline-block;
+    width: fit-content;
+    margin: 20px 20px 0 0;
+}
+
+.opinionCont > div > .stars {
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+}
+
+.stars{
+    color: #d1272d;
+}
+
+</style>

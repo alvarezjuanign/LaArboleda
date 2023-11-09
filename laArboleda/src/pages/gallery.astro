@@ -1,11 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import "./gallery.css";
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout>
+<Layout title="La Arboleda">
   <main class="mainCont">
-    <a class="sign" href="..">🡸</a>
+    <a class="sign" href="..">&laquo;</a>
     <h1 class="mainContTitle">Gallery</h1>
     <section class="mainGallery">
       <img class="photo" src="https://res.cloudinary.com/ddmtmwlja/image/upload/v1699382012/zeiwhse3dhrriaje08py.webp" alt="view of the huts">
@@ -25,3 +24,49 @@ import "./gallery.css";
     </section>
   </main>
 </Layout>
+
+<style>
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.sign{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: #d1272d;
+  text-decoration: none;
+  align-self: start;
+  scale: 3;
+  transition: scale 0.3s ease-in-out;
+}
+
+.sign:hover {
+  scale: 3.5;
+  color: #f2f2f2;
+}
+
+.mainContTitle {
+  font-size: 64px;
+  border-bottom: 2px solid #d1272d;
+  width: fit-content;
+  cursor: default;
+  margin-top: 15px;
+}
+
+.mainGallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+</style>
