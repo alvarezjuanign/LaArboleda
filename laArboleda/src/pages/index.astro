@@ -23,21 +23,15 @@ const linkLocation = 'https://www.google.es/maps/place/La+Arboleda+en+Carpinteri
             </nav>
     </section>
     <section class="contBtns">
-        <button class="btnWpp">
             <a href="https://wa.link/o1g51t">
-                <!-- Falta svg -->
+                <i class="fa-brands fa-whatsapp"></i>
             </a>
-        </button>
-        <button class="btnIg">
             <a href="https://www.instagram.com/laarboledaen/">
-                <!-- Falta svg -->
+                <i class="fa-brands fa-instagram"></i>
             </a>
-        </button>
-        <button class="btnFace">
             <a href="https://www.facebook.com/laarboledaencarpinteria">
-                <!-- Falta svg -->
+                <i class="fa-brands fa-facebook-messenger"></i>
             </a>
-        </button>
     </section>
 </main>
 </Layout>
@@ -96,43 +90,27 @@ body{
 .contBtns {
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 
-.contBtns button {
-    margin: .5rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 100%;
-    color: #f2f2f2;
-    transition: transform .3s ease-in-out;
+.fa-brands{
+    color: CanvasText;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.contBtns button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+.fa-facebook-messenger:hover {
+    color: #4267B2;
+    scale: 1.5;
 }
 
-.btnWpp {
-    background-color: #25d365;
+.fa-whatsapp:hover {
+    color: #25d365;
+    scale: 1.5;
 }
 
-.btnIg {
-    background-color: #cc39a5;
-}
-
-.btnFace {
-    background-color: #4267b2;
-}
-
-.icon{
-    fill: #f2f2f2;
-    height: 20px;
-    width: 20px;
-}
-
-#instagram{
-    fill: #f2f2f2;
-    height: 20px;
-    width: 20px;
+.fa-instagram:hover {
+    color: #E1306C;
+    scale: 1.5;
 }
 </style>

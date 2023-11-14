@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="La Arboleda">
+<Layout title="Gallery">
   <main class="mainCont">
     <a class="sign" href="..">&laquo;</a>
     <h1 class="mainContTitle">Gallery</h1>
@@ -59,8 +59,9 @@ import Layout from "../layouts/Layout.astro"
 
 .mainGallery{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
 }
 
 .photo{
@@ -68,5 +69,31 @@ import Layout from "../layouts/Layout.astro"
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .mainGallery{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .mainGallery :nth-child(5){
+    grid-column: span 2;
+  }
+  .mainGallery :nth-child(7){
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainGallery{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .mainGallery :nth-child(5){
+    grid-row: span 3;
+  }
+  .mainGallery :nth-child(10){
+    grid-column: span 2;
+  }
 }
 </style>

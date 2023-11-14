@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title='La Arboleda'>
+<Layout title='About La Arboleda'>
     <main class="mainCont">
         <a class="sign" href="..">&laquo;</a>
         <h1 class="mainContTitle">About</h1>
@@ -53,6 +53,7 @@ import Layout from '../layouts/Layout.astro'
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    max-width: 900px;
 }
 
 .sign {
@@ -91,6 +92,11 @@ b{
     margin-top: 50px;
 }
 
+.opinionCont{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .opinionCont > div{
     border-bottom: #d1272d .1rem solid;
     margin-bottom: 2rem;
@@ -112,4 +118,11 @@ b{
     color: #d1272d;
 }
 
+@media screen and (min-width: 900px) {
+    .opinionCont{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+}
 </style>
