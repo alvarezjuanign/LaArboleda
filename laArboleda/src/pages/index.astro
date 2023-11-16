@@ -1,7 +1,15 @@
 ---
+import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro'
 
 const linkLocation = 'https://www.google.es/maps/place/La+Arboleda+en+Carpinteria/@-32.3950068,-65.0057687,16z/data=!4m6!3m5!1s0x95d2e3220122fe8d:0x841412906b839df!8m2!3d-32.3950068!4d-65.0013913!16s%2Fg%2F11h21_28c7?hl=es&entry=ttu'
+
+const API_KEY = "979046cf3730ad09da6a2e07f6b018db"
+
+const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=-32.410421&lon=-65.011677&units=metric&appid=${API_KEY}`)
+const data = await res.json()
+
+const temp = Math.round(data.main.temp)
 ---
 
 <Layout title='La Arboleda'>
@@ -10,13 +18,13 @@ const linkLocation = 'https://www.google.es/maps/place/La+Arboleda+en+Carpinteri
         <h1 class="sectionContTitle">La Arboleda</h1>
             <nav class="navCont">
                 <ul class="navContUl">
-                    <li class="navContLi">
+                    <li class="navContLi about">
                         <a href="/about">About</a>
                     </li>
-                    <li class="navContLi">
+                    <li class="navContLi gallery">
                         <a href="/gallery">Gallery</a>
                     </li>
-                    <li class="navContLi">
+                    <li class="navContLi location">
                         <a href={linkLocation}>Location</a>
                     </li>
                 </ul>
@@ -33,12 +41,50 @@ const linkLocation = 'https://www.google.es/maps/place/La+Arboleda+en+Carpinteri
                 <i class="fa-brands fa-facebook-messenger"></i>
             </a>
     </section>
+    <section class="weather">
+        <h3>{data.name}, San Luis</h3>
+        <div class="weatherCond">
+            {data.weather[0].main == 'Clear' ? <i class="fa-solid fa-sun"></i> : <i class="fa-solid fa-cloud"></i> }
+            <p class="temperature">{temp}°C</p>
+        </div>
+    </section>
 </main>
 </Layout>
 
 <style>
-body{
+body {
     height: 100vh;
+    overflow: hidden;
+}
+
+.weather{
+    position: absolute;
+    top: 0;
+    background: #d1272d;
+    color: #f2f2f2;
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    cursor: default;
+}
+
+.weatherCond{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-solid{
+    font-size: 1.2rem;
+}
+
+.temperature{
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .mainCont {
@@ -50,7 +96,6 @@ body{
 }
 
 .sectionContTitle {
-    text-align: center;
     font-size: 64px;
     border-bottom: 2px solid #d1272d;
     cursor: default;
